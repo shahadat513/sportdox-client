@@ -28,13 +28,27 @@ const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <NavLink to="/"><li><a>Home</a></li></NavLink>
-                            <NavLink to="/allEquipment"><li><a>All Sports Equipment</a></li></NavLink>
-                            <NavLink to="/addEquipment"><li><a>Add Equipment</a></li></NavLink>
-                            <NavLink to="/myEquipment"><li><a>My Equipment List</a></li></NavLink>
-                            <NavLink to="/about"><li><a>About Us</a></li></NavLink>
-                            <NavLink to="/contact"><li><a>Contact</a></li></NavLink>
-                            <NavLink to="/support"><li><a> Support</a></li></NavLink>
+                             <NavLink to="/"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Home</a></li></NavLink>
+                        <NavLink to="/allEquipment"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>All Sports Equipment</a></li></NavLink>
+                        <NavLink to="/addEquipment"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Add Equipment</a></li></NavLink>
+                        <NavLink to="/myEquipment"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>My Equipment List</a></li></NavLink>
+                        <NavLink to="/about"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>About Us</a></li></NavLink>
+                        <NavLink to="/contact"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Contact</a></li></NavLink>
+                        <NavLink to="/support"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Support</a></li></NavLink>
                         </ul>
                     </div>
                     <NavLink to="/"><a className="btn btn-ghost text-xl">SPORT-DOX</a></NavLink>
@@ -43,14 +57,26 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <NavLink to="/"
-                            className={({ isActive }) => (isActive ? "text-primary font-bold" : "text-gray-600")}
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
                         ><li><a>Home</a></li></NavLink>
-                        <NavLink to="/allEquipment"><li><a>All Sports Equipment</a></li></NavLink>
-                        <NavLink to="/addEquipment"><li><a>Add Equipment</a></li></NavLink>
-                        <NavLink to="/myEquipment"><li><a>My Equipment List</a></li></NavLink>
-                        <NavLink to="/about"><li><a>About Us</a></li></NavLink>
-                        <NavLink to="/contact"><li><a>Contact</a></li></NavLink>
-                        <NavLink to="/support"><li><a> Support</a></li></NavLink>
+                        <NavLink to="/allEquipment"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>All Sports Equipment</a></li></NavLink>
+                        <NavLink to="/addEquipment"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Add Equipment</a></li></NavLink>
+                        <NavLink to="/myEquipment"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>My Equipment List</a></li></NavLink>
+                        <NavLink to="/about"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>About Us</a></li></NavLink>
+                        <NavLink to="/contact"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Contact</a></li></NavLink>
+                        <NavLink to="/support"
+                            className={({ isActive }) => (isActive ? "text-red-600 font-bold" : "text-white")}
+                        ><li><a>Support</a></li></NavLink>
                     </ul>
                 </div>
                 {/* Navbar End */}
