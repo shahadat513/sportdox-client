@@ -11,6 +11,9 @@ import SignUp from "../components/SignUp";
 import MyEquipment from "../pages/MyEquipment";
 import Update from "../components/Update";
 import PrivateRoutes from "../privateRoutes/PrivateRoutes";
+import AboutUs from "../pages/AboutUs";
+import Support from "../pages/Support";
+import Contact from "../pages/Contact";
 
 const routes = createBrowserRouter([
     {
@@ -49,6 +52,19 @@ const routes = createBrowserRouter([
             {
                 path: "/signup",
                 element: <SignUp></SignUp>,
+            },
+            {
+                path: "/about",
+                element: <AboutUs></AboutUs>,
+            },
+            {
+                path: "/contact",
+                element: <Contact></Contact>,
+            },
+            {
+                path: "/support",
+                element: 
+                <Support></Support>,
             },
             {
                 path: "/myEquipment",

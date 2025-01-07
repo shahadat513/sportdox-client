@@ -32,6 +32,9 @@ const Navbar = () => {
                             <NavLink to="/allEquipment"><li><a>All Sports Equipment</a></li></NavLink>
                             <NavLink to="/addEquipment"><li><a>Add Equipment</a></li></NavLink>
                             <NavLink to="/myEquipment"><li><a>My Equipment List</a></li></NavLink>
+                            <NavLink to="/about"><li><a>About Us</a></li></NavLink>
+                            <NavLink to="/contact"><li><a>Contact</a></li></NavLink>
+                            <NavLink to="/support"><li><a> Support</a></li></NavLink>
                         </ul>
                     </div>
                     <NavLink to="/"><a className="btn btn-ghost text-xl">SPORT-DOX</a></NavLink>
@@ -40,11 +43,14 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         <NavLink to="/"
-                        className={({ isActive }) => (isActive ? "text-primary font-bold" : "text-gray-600")}
+                            className={({ isActive }) => (isActive ? "text-primary font-bold" : "text-gray-600")}
                         ><li><a>Home</a></li></NavLink>
                         <NavLink to="/allEquipment"><li><a>All Sports Equipment</a></li></NavLink>
                         <NavLink to="/addEquipment"><li><a>Add Equipment</a></li></NavLink>
                         <NavLink to="/myEquipment"><li><a>My Equipment List</a></li></NavLink>
+                        <NavLink to="/about"><li><a>About Us</a></li></NavLink>
+                        <NavLink to="/contact"><li><a>Contact</a></li></NavLink>
+                        <NavLink to="/support"><li><a> Support</a></li></NavLink>
                     </ul>
                 </div>
                 {/* Navbar End */}
@@ -54,7 +60,7 @@ const Navbar = () => {
                             <div className="tooltip tooltip-bottom" data-tip={user.displayName || "User"}>
                                 <img
                                     className="rounded-full h-10 w-10 cursor-pointer"
-                                    src={user.photoURL || ""} 
+                                    src={user.photoURL || ""}
                                     alt="User Profile"
                                 />
                             </div>
